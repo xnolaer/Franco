@@ -1,0 +1,118 @@
+/* ملف styles.css */
+
+/* تنسيق الحاوية */
+.container {
+    max-width: 1200px; /* حجم أكبر للحاوية */
+    margin: 50px auto; /* وضع الحاوية في منتصف الشاشة مع مساحة من الأعلى */
+    padding: 40px;
+    background-color: #f4f4f9; /* لون خلفية الحاوية */
+    border-radius: 20px; /* حواف دائرية أكثر نعومة */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* ظل خفيف وناعمة للحاوية */
+    text-align: center;
+    box-sizing: border-box; /* التأكد من احتساب الحشو والحدود في الحجم الكلي */
+}
+
+/* تنسيق العنوان */
+h1 {
+    margin-bottom: 20px;
+    font-size: 42px; /* حجم الخط أكبر */
+    color: #333; /* لون الخط */
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+}
+
+/* تعليمات المستخدم */
+.instructions {
+    margin-bottom: 20px;
+    font-size: 18px; /* حجم الخط للشرح */
+    color: #555; /* لون الخط */
+}
+
+/* تنسيق خانة النص */
+textarea {
+    width: 100%;
+    height: 250px; /* حجم أكبر لخانة النص */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* لون الإطار */
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 18px; /* حجم الخط أكبر */
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    resize: none; /* منع تغيير الحجم من قبل المستخدم */
+}
+
+/* تنسيق خانة الترجمة */
+#result {
+    height: 100px; /* الحفاظ على حجم خانة الترجمة */
+    margin-bottom: 20px;
+    background-color: #e9ecef; /* لون خلفية خفيف للتمييز */
+    border: 1px solid #ccc; /* لون الإطار */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 18px; /* حجم الخط أكبر */
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    box-sizing: border-box; /* التأكد من احتساب الحشو والحدود في الحجم الكلي */
+}
+
+/* تنسيق الأزرار */
+button {
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #007BFF; /* لون خلفية الزر */
+    transition: background-color 0.3s ease; /* تأثير الانتقال */
+    margin: 10px; /* مسافة بين الأزرار */
+}
+
+/* تغيير لون الخلفية للزر عند مرور الماوس */
+button:hover {
+    background-color: #0056b3; /* لون الخلفية عند التمرير */
+}
+
+/* تنسيق زر النسخ */
+.copy-button {
+    background-color: #28a745; /* لون خلفية زر النسخ */
+}
+
+/* تغيير لون الخلفية للزر عند مرور الماوس */
+.copy-button:hover {
+    background-color: #218838; /* لون الخلفية عند التمرير */
+}
+
+/* تنسيق الحاوية الخاصة بنتائج الترجمة */
+#result-container {
+    margin-top: 20px; /* المسافة بين خانة النص وزر النسخ */
+    text-align: center; /* توسيط العناصر */
+}
+
+/* تنسيق رسالة الردود */
+.feedback {
+    color: #d9534f; /* لون الرسائل */
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* تحسين الاستجابة للأجهزة المحمولة */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 200px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    #result {
+        height: 80px;
+        font-size: 16px;
+    }
+}

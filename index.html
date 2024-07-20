@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترجمة الفرانكو</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ترجمة الفرانكو</h1>
+        <p class="instructions">اكتب النص العربي في الخانة أدناه واضغط على "ترجم" لتحويله إلى فرانكو.</p>
+        <textarea id="inputText" placeholder="اكتب هنا..." title="اكتب نصك هنا..."></textarea>
+        <button onclick="translateText()" title="ترجم النص">ترجم</button>
+        <div id="result-container">
+            <textarea id="result" readonly placeholder="الترجمة تظهر هنا..." title="النص المترجم"></textarea>
+            <button onclick="copyToClipboard()" class="copy-button" title="نسخ النص">نسخ</button>
+        </div>
+        <p id="feedback" class="feedback"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
